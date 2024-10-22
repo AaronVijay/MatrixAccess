@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+   <html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+      <!--=============== REMIXICONS ===============-->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css">
+
+      <!--=============== SWIPER CSS ===============-->
+      <link rel="stylesheet" href="swiper-bundle.min.css">
+
+      <!--=============== CSS ===============-->
+      <link rel="stylesheet" href="FirstPageArch1.css">
+
+      <title>Matrix Acces</title>    
+   </head>
+   <body>
+      <!--==================== HEADER ====================-->
+      <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#" class="nav__logo">MatrixAccess</a>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li>
+                        <a href="file:///C:/FeeProjectRfidPortal/FirstPage/FirstPageArch.html#" class="nav__link">Home</a>
+                    </li>
+                    <li>
+                        <a href="file:///C:/FeeProjectRfidPortal/LoginPage/LoginPage.html" class="nav__link">SignIn</a>
+                    </li>
+                    <li>
+                        <a href="file:///C:/FeeProjectRfidPortal/T&Cs/Terms.html" class="nav__link">T&Cs</a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav__link">Industries</a>
+                    </li>
+                    <li>
+                        <a href="file:///C:/FeeProjectRfidPortal/FirstPage/AboutUs.html" class="nav__link">Contact</a>
+                    </li>
+                </ul>
+                <!-- <close button> -->
+                <div class="nav__close" id="nav-close">
+                    <i class="ri-close-line"></i>
+                </div>
+            </div>
+
+            <!-- <toogle buttone> -->
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="ri-menu-4-line"></i>
+                </div>
+        </nav>
+      </header>
+
+      <!--==================== MAIN ====================-->
+      <main class="main">
+        
+         <!--==================== HOME ====================-->
+         <section class="home">
+                <div class="home__swiper swiper">
+                    <div class="swiper-wrapper">
+                        <article class="home__article swiper-slide">
+                            <div class="home__data container">
+                                <h3 class="home__subtitle" data-swiper-parallax='500'>MatrixAccess</h3>
+                                <h1 class="home__title" data-swiper-parallax="400">Unlock Your World With<br>Smart Access</h1>
+                                <a href="https://en.wikipedia.org/wiki/Radio-frequency_identification" class="home__button" data-swiper-parallax="300">
+                                    Know More <i class="ri-arrow-right-s-line"></i>
+                                </a>
+                            </div>
+        
+                            <img src="FirstImage.webp" alt="image home 1" class="home__img" data-swiper-parallax="-300">
+                            <div class="home__shadow"></div>
+                        </article>
+        
+                        <article class="home__article swiper-slide">
+                            <div class="home__data container">
+                                <h3 class="home__subtitle" data-swiper-parallax='500'>Our Story</h3>
+                                <h1 class="home__title" data-swiper-parallax="400">From vision to reality<br>Our journey redefined access.</h1>
+                                <a href="file:///C:/FeeProjectRfidPortal/FirstPage/AboutUs.html" class="home__button" data-swiper-parallax="300">
+                                    Know More <i class="ri-arrow-right-s-line"></i>
+                                </a>
+                            </div>
+        
+                            <img src="SecondImage.jpg" alt="image home 1" class="home__img" data-swiper-parallax="-300">
+                            <div class="home__shadow"></div>
+                        </article>
+                        <article class="home__article swiper-slide">
+                            <div class="home__data container">
+                                <h3 class="home__subtitle" data-swiper-parallax='500'>Our Connections</h3>
+                                <h1 class="home__title" data-swiper-parallax="400">Our customers trust us to deliver secure and innovative solutions every day.</h1>
+                                <a href="#" class="home__button" data-swiper-parallax="300">
+                                    Know More <i class="ri-arrow-right-s-line"></i>
+                                </a>
+                            </div>
+        
+                            <img src="ThirdImage.jpg" alt="image home 1" class="home__img" data-swiper-parallax="-300">
+                            <div class="home__shadow"></div>
+                        </article>
+        
+                        <article class="home__article swiper-slide">
+                            <div class="home__data container">
+                                <h3 class="home__subtitle" data-swiper-parallax='500'>Products</h3>
+                                <h1 class="home__title" data-swiper-parallax="400">Explore Our Innovations.</h1>
+                                <a href="file:///C:/FeeProjectRfidPortal/LogsAndProduct/Product.html" class="home__button" data-swiper-parallax="300">
+                                    See Products <i class="ri-arrow-right-s-line"></i>
+                                </a>
+                            </div>
+        
+                            <img src="FourthImage.jpg" alt="image home 1" class="home__img" data-swiper-parallax="-300">
+                            <div class="home__shadow"></div>
+                        </article>
+                    </div>
+                </div>
+            <div class="home__content">
+                <div class="home__social">
+                    <a href="https://www.facebook.com/" target="blank" class="home_social-link">
+                        <i class="ri-facebook-circle-line"></i>
+                    </a>
+
+                    <a href="https://www.instagram.com/" target="blank" class="home_social-link">
+                        <i class="ri-instagram-line"></i>
+                    </a>
+
+                    <a href="https://x.com/?lang=en" target="blank" class="home_social-link">
+                        <i class="ri-twitter-x-line"></i>
+                    </a>
+                </div>
+                <!-- <pagination> -->
+                    <div class="swiper-pagination"></div>
+            
+            <!-- <navigation buttons> -->
+                <div class="swiper-navigation">
+                    <div class="swiper-button-prev">
+                        <i class="ri-arrow-left-s-line"></i>
+                    </div>
+                    <div class="swiper-button-next">
+                        <i class="ri-arrow-right-s-line"></i>
+                    </div>
+                </div>
+            </div>
+         </section>
+      </main>
+
+      <!--=============== SWIPER JS ===============-->
+      <script src="swiper-bundle.min.js"></script>
+
+      <!--=============== MAIN JS ===============-->
+      <script src="FirstPageArch1.js"></script>
+
+
+
+       <script>
+        document.addEventListener("DOMContentLoaded", function() {
+    var cookieConsent = document.getElementById("cookieConsent");
+    var acceptButton = document.getElementById("acceptAll");
+    var rejectButton = document.getElementById("rejectAll");
+
+    console.log("Cookie consent script loaded");
+
+    acceptButton.addEventListener("click", function() {
+        console.log("Accept All clicked");
+        cookieConsent.style.display = "none";
+        document.cookie = "cookieConsent=accepted; path=/; max-age=" + 60*60*24*30; // Expires in 30 days
+    });
+
+    rejectButton.addEventListener("click", function() {
+        console.log("Reject All clicked");
+        cookieConsent.style.display = "none";
+        document.cookie = "cookieConsent=rejected; path=/; max-age=" + 60*60*24*30; // Expires in 30 days
+    });
+
+    if (document.cookie.includes("cookieConsent")) {
+        console.log("Cookie consent already given");
+        cookieConsent.style.display = "none";
+    }
+});
+       </script>
+
+
+
+      <div id="cookieConsent">
+        <p>By clicking "Accept All", you agree to the storing of cookies on your device to enhance site navigation, analyze site usage, and assist in our marketing efforts. 
+        <a href="file:///C:/FeeProjectRfidPortal/FirstPage/Cookies.html">Read more about cookies</a></p>
+        <div id="buttonContainer">
+            <button id="acceptAll">Accept All</button>
+            <button id="rejectAll">Reject All</button>
+        </div>
+        <a href="file:///C:/FeeProjectRfidPortal/FirstPage/Cookies.html" id="manageCookies">Manage Cookies</a>
+    </div>
+      <footer>
+        <p>&copy; 2024 MATRIX ACCESS. All rights reserved.</p>
+    </footer>
+   </body>
+</html>
