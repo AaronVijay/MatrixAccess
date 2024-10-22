@@ -1,0 +1,4 @@
+// This script currently doesn't add any functionality but is ready for future enhancements
+document.addEventListener('DOMContentLoaded', () => {
+    console.log('About Us page loaded');
+});
