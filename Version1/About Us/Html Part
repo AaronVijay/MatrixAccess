@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="stylesheet" href="AboutUs.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css">
+</head>
+<body>
+    <div class="description">
+        <h1>Meet the Founders</h1>
+        <p>Learn more about us</p>
+    </div>
+    <div class="container">
+        <div class="member" id="aryan">
+            <h2>Aryan</h2>
+            <p>CFO</p>
+            <img src="aryan_trunks.jpg" alt="Aryan" style="border-radius:50%; height:100px;width: 100px;">
+            <div class="icons">
+                <a href="https://www.instagram.com/aryan" target="_blank"><i class="ri-instagram-line"></i></a>
+                <a href="https://www.facebook.com/aryan" target="_blank"><i class="ri-facebook-line"></i></a>
+                <a href="https://www.linkedin.com/in/aryan-semwal-478097293/" target="_blank"><i class="ri-linkedin-line"></i></a>
+                <a href="https://twitter.com/aryan" target="_blank"><i class="ri-twitter-x-line"></i></a>
+            </div>
+        </div>
+        <div class="member" id="aaron">
+            <h2>Aaron</h2>
+            <p>CEO</p>
+            <img src="aaron_vegeta.jpg" alt="Aaron" style="border-radius:50%; height:100px;width: 100px;">
+            <div class="icons">
+                <a href="https://www.instagram.com/aaron" target="_blank"><i class="ri-instagram-line"></i></a>
+                <a href="https://www.facebook.com/aaron" target="_blank"><i class="ri-facebook-line"></i></a>
+                <a href="https://www.linkedin.com/in/aaron-vijay-singh-86baaa300/" target="_blank"><i class="ri-linkedin-line"></i></a>
+                <a href="https://twitter.com/aaron" target="_blank"><i class="ri-twitter-x-line"></i></a>
+            </div>
+        </div>
+        <div class="member" id="anuj">
+            <h2>Anuj</h2>
+            <p>CTO</p>
+            <img src="anuj_beerus.jpg" alt="Anuj" style="border-radius:50%; height:100px;width: 100px;">
+            <div class="icons">
+                <a href="https://www.instagram.com/anujyadav9667/?igsh=MTZiM2x6dzU0dmE5eA%3D%3D" target="_blank"><i class="ri-instagram-line"></i></a>
+                <a href="https://www.facebook.com/anuj" target="_blank"><i class="ri-facebook-line"></i></a>
+                <a href="https://www.linkedin.com/in/anuj-yadav-0888382ab/" target="_blank"><i class="ri-linkedin-line"></i></a>
+                <a href="https://twitter.com/anuj" target="_blank"><i class="ri-twitter-x-line"></i></a>
+            </div>
+        </div>
+        <div class="member" id="akshit">
+            <h2>Akshit</h2>
+            <p>COO</p>
+            <img src="akshit_gohan.jpg" alt="Akshit" style="border-radius:50%; height:100px;width: 100px;">
+            <div class="icons">
+                <a href="https://www.instagram.com/akshit.009/?igsh=bng5YnZ6bHJla2Ji" target="_blank"><i class="ri-instagram-line"></i></a>
+                <a href="https://www.facebook.com/akshit" target="_blank"><i class="ri-facebook-line"></i></a>
+                <a href="https://www.linkedin.com/in/akshit" target="_blank"><i class="ri-linkedin-line"></i></a>
+                <a href="https://twitter.com/akshit" target="_blank"><i class="ri-twitter-x-line"></i></a>
+            </div>
+        </div>
+    </div>
+    <script src="AboutUs.js"></script>
+</body>
+</html>
