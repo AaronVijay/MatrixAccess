@@ -1,0 +1,315 @@
+/* General body styles */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #e0f7fa; /* Light blue background for a refreshing look */
+    background-image: url('id\ card\ 2.jpg'); /* Path to your background image */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Container styling */
+#container {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.8), rgba(240, 244, 248, 0.8)), /* Gradient overlay for readability */
+                url('id\ card\ 2.jpg'); /* Path to your container background image */
+    background-size: cover; /* Ensure the image covers the entire container */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    padding: 30px;
+    border-radius: 12px; /* More rounded corners */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Larger shadow for depth */
+    width: 100%;
+    max-width: 600px; /* Increased max width */
+    text-align: center; /* Center align all text inside the container */
+}
+
+/* Header image styling */
+.header-image {
+    width: 100%; /* Full width of container */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 12px; /* Match border radius of the container */
+    margin-bottom: 20px; /* Space below the image */
+}
+
+/* Header styling */
+h1 {
+    color: #333; /* Dark gray for better readability */
+    margin-bottom: 20px;
+    font-size: 28px; /* Larger font size for emphasis */
+    font-weight: 700; /* Bold font */
+}
+
+/* Label styling */
+label {
+    font-size: 18px; /* Slightly larger font size for labels */
+    color: #555; /* Slightly lighter gray */
+    margin-bottom: 10px;
+    text-align: left; /* Align label text to the left */
+}
+
+input{
+    border-radius: 5px;
+    box-shadow:0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Input wrapper styling */
+.input-wrapper {
+    display: flex;
+    align-items:center; /* Align items vertically */
+    position: relative; /* Allow absolute positioning of the button */
+    margin-bottom: 20px; /* Increased margin */
+}
+
+/* RFID input box styling */
+#rfidInput {
+    width: calc(100% - 130px); /* Adjust width to leave space for the button */
+    padding: 12px;
+    margin-bottom: 10px;
+    border: 2px solid #007BFF; /* Bright blue border */
+    border-radius: 8px; /* Rounded corners */
+    font-size: 16px;
+    background-color: #ffffff; /* White background */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+    transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions */
+}
+
+/* Input focus styling */
+#rfidInput:focus {
+    border-color: #0056b3; /* Darker blue border on focus */
+    box-shadow: 0 0 8px rgba(0, 86, 179, 0.3); /* Enhanced shadow effect on focus */
+    outline: none; /* Remove default outline */
+}
+
+/* General Button Styling */
+button {
+    padding: 12px 24px;
+    background-color: #007BFF; /* Bright blue for button */
+    color: white;
+    border: none;
+    border-radius: 8px; /* More rounded corners */
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+    width: 100%; /* Make buttons take full width of their container */
+    max-width: 200px; /* Set a max-width for uniformity */
+}
+
+/* Button Hover Styling */
+button:hover {
+    background-color: #0056b3; /* Darker blue for hover effect */
+}
+
+/* Adjust specific button styling */
+#showListButton {
+    background-color: #28a745; /* Green background for Show Card Holders button */
+}
+
+#showListButton:hover {
+    background-color: #218838; /* Darker green for hover effect */
+}
+
+/* Button group styling */
+.button-group {
+    display: flex;
+    justify-content: center; /* Center buttons horizontally */
+    gap: 10px; /* Space between buttons */
+    margin-top: 10px;
+}
+
+/* Ensure each button in the group has the same size */
+.button-group button {
+    padding: 12px 24px;
+    background-color: #007BFF; /* Bright blue for button */
+    color: white;
+    border: none;
+    border-radius: 8px; /* More rounded corners */
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+    width: 100%; /* Full width of the button-group container */
+    max-width: 200px; /* Uniform max-width */
+}
+
+/* Button Hover Styling */
+.button-group button:hover {
+    background-color: #0056b3; /* Darker blue for hover effect */
+}
+
+/* Specific button styles */
+#showListButton {
+    background-color: #28a745; /* Green background for Show Card Holders button */
+}
+
+#showListButton:hover {
+    background-color: #218838; /* Darker green for hover effect */
+}
+
+/* Floating Buttons */
+button#fButton, button#qButton {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    width: 40px;
+    height: 40px;
+    border: none;
+    background-color: #007BFF; /* Bright blue */
+    color: white;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    z-index: 1000; /* Ensure buttons are on top */
+    transition: 0.3s ease;
+}
+
+button#fButton:hover, button#qButton:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* FAQ Window */
+#faqWindow {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 300px;
+    height: 100%;
+    background: white;
+    box-shadow: -4px 0 8px rgba(0, 0, 0, 0.2);
+    transform: translateX(100%);
+    transition: transform 0.3s ease;
+    z-index: 1000; /* Ensure it appears on top */
+    padding: 20px;
+    overflow-y: auto; /* Add vertical scrolling */
+}
+
+#faqWindow.show {
+    transform: translateX(0);
+}
+
+#closeFAQ {
+    background-color: transparent; /* Make the button background transparent */
+    color: #dc3545; /* Red color for the close icon */
+    border: none;
+    padding: 5px; /* Adjust padding for smaller size */
+    cursor: pointer;
+    font-size: 30px; /* Adjust font size for the icon */
+    position: absolute; /* Position the button inside the FAQ window */
+    top: 10px; /* Position from the top */
+    right: 55px; /Position from the right/
+    z-index: 1001; /* Ensure it appears on top */
+    transition: color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+#closeFAQ:hover {
+    color: #c82333; /* Darker red on hover */
+}
+
+#faqContent {
+    margin-top: 20px;
+}
+
+#faqContent p {
+    margin: 10px 0;
+    font-size: 14px;
+    color: #333;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    #container {
+        padding: 20px;
+    }
+
+    .button-group {
+        flex-direction: column; /* Stack buttons vertically on smaller screens */
+        gap: 10px; /* Space between stacked buttons */
+    }
+
+    #showListButton {
+        width: 100%; /* Full width for small screens */
+        border-radius: 8px; /* Full border radius for small screens */
+        position: static; /* Reset position for small screens */
+        margin-top: 10px; /* Add space above the button */
+    }
+
+    #rfidInput {
+        width: 100%; /* Full width for smaller screens */
+        padding-right: 10px; /* Adjust padding for the button */
+    }
+}
+
+#submit-btn {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    outline: none;
+}
+
+#submit-btn:hover {
+    background-color: #0056b3;
+}
+
+.loading {
+    display: none; /* Hidden by default */
+            position: fixed; /* Fixed position to cover the screen */
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%); /* Center the loading animation */
+            background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            z-index: 1000; /* Make sure it is on top of other elements */
+            text-align: center;
+}
+
+.giphy-embed {
+    background: transparent; /* Ensure the GIF background is transparent */
+}
+
+/* Styling for the floating icon */
+#floatingIcon {
+    position: fixed;  /* Fixes the position relative to the viewport */
+    bottom: 20px;     /* Distance from the bottom of the viewport */
+    right: 20px;      /* Distance from the right of the viewport */
+    font-size: 32px;  /* Adjust the size of the icon */
+    color: #007BFF;   /* Icon color */
+    background-color: white; /* Background color for the icon */
+    padding: 10px;    /* Padding around the icon */
+    border-radius: 50%; /* Makes the background circular */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds a shadow for depth */
+    z-index: 1000;    /* Ensures it stays on top of other elements */
+    cursor: pointer;  /* Changes cursor to pointer on hover */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
+
+}
+
+/* Hover effect for the icon */
+#floatingIcon:hover {
+    background-color: #0056b3; /* Change background on hover */
+    color: white;              /* Change icon color on hover */
+}
+
+
+#floatingLog{
+    position: fixed;  /* Fixes the position relative to the viewport */
+    top: 100px;     /* Distance from the bottom of the viewport */
+    right: 30px;      /* Distance from the right of the viewport */
+    font-size: 32px;  /* Adjust the size of the icon */
+    color: #007BFF;   /* Icon color */
+    background-color: white; /* Background color for the icon */
+    padding: 10px;    /* Padding around the icon */
+    border-radius: 50%; /* Makes the background circular */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds a shadow for depth */
+    z-index: 1000;    /* Ensures it stays on top of other elements */
+    cursor: pointer;  /* Changes cursor to pointer on hover */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
+}
