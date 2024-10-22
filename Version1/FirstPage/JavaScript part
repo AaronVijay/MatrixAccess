@@ -1,0 +1,74 @@
+/=============== SHOW MENU ===============/
+const navMenu=document.getElementById('nav-menu'),
+navToggle=document.getElementById('nav-toggle'),
+navClose=document.getElementById('nav-close');
+
+/menu show/
+if(navToggle){
+    navToggle.addEventListener('click',()=>{
+        navMenu.classList.add('show-menu')
+    })
+}
+
+/menu hidden/
+if(navClose){
+    navClose.addEventListener('click',()=>{
+        navMenu.classList.remove('show-menu')
+    })
+}
+
+/=============== REMOVE MENU MOBILE ===============/
+const navLink=document.querySelectorAll('.nav__link')
+
+const linkAction=()=>{
+    const navMenu=document.getElementById('nav-menu')
+    navMenu.classList.remove('show-menu')
+}
+navLink.forEach(n=>n.addEventListener('click',()=>{
+    navMenu.classList.remove('show-menu');
+
+}))
+
+/swiper homes/
+const swiperHome=new Swiper('.home__swiper',{
+    loop:true,
+    speed:800,
+    parallax:true,
+    effect:'fade',
+    
+    pagination:{
+        el:'.swiper-pagination',
+    type:'fraction',
+    formatFractionCurrent:(number)=>{return '0'+number},
+    formatFractionTotal:(number)=>{return '0'+number}},
+        
+    navigation:{
+            nextEl:'.swiper-button-next',
+            prevEl:'.swiper-button-prev',
+        },
+})
+
+document.addEventListener("DOMContentLoaded", function() {
+    var cookieConsent = document.getElementById("cookieConsent");
+    var acceptButton = document.getElementById("acceptAll");
+    var rejectButton = document.getElementById("rejectAll");
+
+    console.log("Cookie consent script loaded");
+
+    acceptButton.addEventListener("click", function() {
+        console.log("Accept All clicked");
+        cookieConsent.style.display = "none";
+        document.cookie = "cookieConsent=accepted; path=/; max-age=" + 60*60*24*30; // Expires in 30 days
+    });
+
+    rejectButton.addEventListener("click", function() {
+        console.log("Reject All clicked");
+        cookieConsent.style.display = "none";
+        document.cookie = "cookieConsent=rejected; path=/; max-age=" + 60*60*24*30; // Expires in 30 days
+    });
+
+    if (document.cookie.includes("cookieConsent")) {
+        console.log("Cookie consent already given");
+        cookieConsent.style.display = "none";
+    }
+});
