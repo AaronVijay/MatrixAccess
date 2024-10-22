@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cookies Policy | India</title>
+    <style>
+        /* Basic Reset */
+body, h1, h2, p, ul, li, a, address {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    background: #007bff;
+    color: #fff;
+    padding: 1em 0;
+    text-align: center;
+    border-bottom: 3px solid #0056b3;
+}
+
+main {
+    padding: 2em;
+    max-width: 800px;
+    margin: auto;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-size: 2em;
+    margin-bottom: 0.5em;
+}
+
+h2 {
+    font-size: 1.5em;
+    margin-bottom: 0.5em;
+    color: #007bff;
+}
+
+ul {
+    list-style-type: disc;
+    padding-left: 1.5em;
+    margin-bottom: 1em;
+}
+
+li {
+    margin-bottom: 0.5em;
+}
+
+code {
+    background: #f1f1f1;
+    padding: 0.2em 0.4em;
+    border-radius: 4px;
+    font-family: monospace;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+address {
+    font-style: normal;
+}
+
+footer {
+    background: #007bff;
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    border-top: 3px solid #0056b3;
+}
+
+@media (max-width: 768px) {
+    main {
+        padding: 1em;
+    }
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Cookies Policy</h1>
+    </header>
+
+    <main>
+        <section>
+            <h2>Effective Date: 31 August 2024</h2>
+            <p>This Cookies Policy explains how Matrix Access we use cookies and similar technologies on our web portal.</p>
+        </section>
+
+        <section>
+            <h2>What Are Cookies?</h2>
+            <p>Cookies are small data files placed on your device when you visit a website. They help the website remember your preferences, enhance your user experience, and provide us with information about how you use the site.</p>
+        </section>
+
+        <section>
+            <h2>Types of Cookies We Use</h2>
+            <ul>
+                <li><strong>Essential Cookies:</strong> These cookies are necessary for the web portal to function properly. They allow you to navigate the site and use its features. Without these cookies, certain services may not be available.</li>
+                <li><strong>Performance Cookies:</strong> These cookies collect information about how visitors use our web portal. They help us understand which pages are popular, how visitors navigate through the site, and if they encounter any errors. This information helps us improve the performance of our portal.</li>
+                <li><strong>Functional Cookies:</strong> These cookies allow us to remember your preferences and choices, such as language or region settings. They enhance your user experience by providing a more personalized experience.</li>
+                <li><strong>Advertising Cookies:</strong> We may use third-party advertising cookies to show you relevant ads based on your interests and to measure the effectiveness of our advertising campaigns. These cookies track your browsing habits across different websites.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Cookies Used on Our Portal</h2>
+            <ul>
+                <li><strong>Session Cookies:</strong> <code>session_id</code> - Maintains user session information. Expires when the browser session ends.</li>
+                <li><strong>Authentication Cookies:</strong> <code>auth_token</code> - Keeps users logged in and manages authentication state. Expires after a period of inactivity or upon logout.</li>
+                <li><strong>Preferences Cookies:</strong> <code>user_preferences</code> - Remembers user preferences like language settings. Can expire after a set period or persist until cleared by the user.</li>
+                <li><strong>Analytics Cookies:</strong> <code>analytics_utm</code> - Collects data on user interactions to improve portal performance. Set for several months or more.</li>
+                <li><strong>Functionality Cookies:</strong> <code>last_visited_page</code> - Remembers the user's last visited page or settings related to the RFID system. Typically set to a few days or weeks.</li>
+                <li><strong>Security Cookies:</strong> <code>csrf_token</code> - Enhances security by detecting fraudulent activity. Usually set for a short period in line with session duration.</li>
+                <li><strong>Advertising Cookies:</strong> <code>ad_tracking</code> - Serves targeted ads based on user behavior. Varies, often set for several months.</li>
+                <li><strong>User Interface Cookies:</strong> <code>ui_theme</code> - Remembers user interface settings like layout or theme. Set based on user preference, typically for a few months or longer.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>How to Manage Cookies</h2>
+            <p>You can control and manage cookies through your browser settings. Most browsers allow you to refuse or delete cookies. However, please note that disabling cookies may affect the functionality and performance of our web portal.</p>
+            <ul>
+                <li><a href="https://support.google.com/chrome/answer/95647?hl=en" target="_blank">For Google Chrome</a></li>
+                <li><a href="https://support.mozilla.org/en-US/kb/clear-cookies-and-site-data-firefox" target="_blank">For Mozilla Firefox</a></li>
+                <li><a href="https://support.apple.com/en-us/HT201265" target="_blank">For Safari</a></li>
+                <li><a href="https://support.microsoft.com/en-us/help/4468242/microsoft-edge-browsing-data-and-privacy" target="_blank">For Microsoft Edge</a></li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Changes to This Cookies Policy</h2>
+            <p>We may update this Cookies Policy from time to time. Any changes will be posted on this page with an updated effective date. We encourage you to review this policy periodically to stay informed about our use of cookies.</p>
+        </section>
+
+        <section>
+            <h2>Contact Us</h2>
+            <p>If you have any questions or concerns about our use of cookies, please contact us at:</p>
+            <address>
+                <strong>MatrixAccess</strong><br>
+                Email: <a href="mailto:">matrixaccess@gmail.com</a><br>
+            </address>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 MATRIX ACCESS All rights reserved.</p>
+    </footer>
+</body>
+</html>
