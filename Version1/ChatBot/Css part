@@ -1,0 +1,109 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.chat-container {
+    width: 300px;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.chat-box {
+    flex-grow: 1;
+    padding: 10px;
+    overflow-y: auto;
+    border-bottom: 1px solid #ddd;
+    max-height: 60vh; /* Limits chat height */
+}
+
+#chat-log {
+    list-style-type: none;
+    padding: 10px;
+    margin: 0;
+}
+
+#chat-log div {
+    margin: 5px 0;
+    clear: both; /* Prevents overlap */
+}
+
+.user-message {
+    display: inline-block;
+    border-radius: 15px;
+    background-color: #007BFF;
+    color: white;
+    padding: 8px 12px;
+    max-width: 75%;
+    float: right;
+    margin-bottom: 10px;
+    word-wrap: break-word;
+}
+
+.bot-message {
+    display: inline-block;
+    border-radius: 15px;
+    background-color: #f1f1f1;
+    color: black;
+    padding: 8px 12px;
+    max-width: 75%;
+    float: left;
+    margin-bottom: 10px;
+    word-wrap: break-word;
+}
+
+#user-input {
+    width: calc(100% - 70px);
+    padding: 10px;
+    border: none;
+    border-top: 1px solid #ddd;
+    outline: none;
+}
+
+#send-btn {
+    width: 60px;
+    padding: 10px;
+    border: none;
+    background-color: #007BFF;
+    color: white;
+    cursor: pointer;
+    outline: none;
+}
+
+#send-btn:hover {
+    background-color: #0056b3;
+}
+
+.predefined-questions {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.predefined-questions button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: none;
+    background-color: #007BFF;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.predefined-questions button:hover {
+    background-color: #0056b3;
+}
