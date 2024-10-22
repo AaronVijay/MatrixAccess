@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Chatbot</title>
+    <link rel="stylesheet" href="ChatBot.css">
+</head>
+<body>
+    <div class="chat-container">
+        <div class="header">
+            <h2 style="text-align: center;">Help & Support</h2>
+            <p style="text-align: center;">Chat with our chatbot</p>
+        </div>
+        <div id="chat-box" class="chat-box">
+            <div id="chat-log"></div>
+        </div>
+        <div class="predefined-questions">
+            <button onclick="sendPredefinedMessage('how do I reset my password')">How do I reset my password?</button>
+            <button onclick="sendPredefinedMessage('how do I register new user')">How do I register new user?</button>
+            <button onclick="sendPredefinedMessage('how do I update my profile information')">How do I update my profile information?</button>
+            <button onclick="sendPredefinedMessage('how do I view my recent access history')">How do I view my recent access history?</button>
+            <button onclick="sendPredefinedMessage('how do I check if my rfid tag is active')">How do I check if my RFID tag is active?</button>
+        </div>
+        <input type="text" id="user-input" placeholder="Type a message..." autofocus>
+        <button id="send-btn">Send</button>
+    </div>
+
+    <script src="ChatBot.js"></script>
+</body>
+</html>
