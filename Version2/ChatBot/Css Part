@@ -1,0 +1,270 @@
+body {
+    font-family: Arial, sans-serif;
+    background:linear-gradient(120deg, #0c0f12, #0f1c29 50%, #101721 80%, #1d3b45);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.chat-container {
+    width: 300px;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.chat-box {
+    flex-grow: 1;
+    padding: 10px;
+    overflow-y: auto;
+    border-bottom: 1px solid #ddd;
+    max-height: 60vh; /* Limits chat height */
+}
+
+#chat-log {
+    list-style-type: none;
+    padding: 10px;
+    margin: 0;
+}
+
+#chat-log div {
+    margin: 5px 0;
+    clear: both; /* Prevents overlap */
+}
+
+.user-message {
+    display: inline-block;
+    border-radius: 15px;
+    background-color: #007BFF;
+    color: white;
+    padding: 8px 12px;
+    max-width: 75%;
+    float: right;
+    margin-bottom: 10px;
+    word-wrap: break-word;
+}
+
+.bot-message {
+    display: inline-block;
+    border-radius: 15px;
+    background-color: #f1f1f1;
+    color: black;
+    padding: 8px 12px;
+    max-width: 75%;
+    float: left;
+    margin-bottom: 10px;
+    word-wrap: break-word;
+}
+
+#user-input {
+    width: calc(100% - 70px);
+    padding: 10px;
+    border: none;
+    border-top: 1px solid #ddd;
+    outline: none;
+}
+
+#send-btn {
+    width: 60px;
+    padding: 10px;
+    border: none;
+    background-color: #007BFF;
+    color: white;
+    cursor: pointer;
+    outline: none;
+}
+
+#send-btn:hover {
+    background-color: #0056b3;
+}
+
+.predefined-questions {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.predefined-questions button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: none;
+    background-color: #007BFF;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.predefined-questions button:hover {
+    background-color: #0056b3;
+}
+
+.header{
+    position:fixed;
+    width:100%;
+    top:0;
+    left:0;
+    background-color: transparent;
+    z-index:var(--z-fixed);
+  }
+  .container1 {
+    max-width: 1120px;
+    margin-inline: 1.5rem;
+  }
+  .nav{
+    position:relative;
+    height:var(--header-height);
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+  }
+  .nav__logo{
+    color:var(--white-color);
+    font-weight:var(--font-semi-bold);
+  }
+  @media screen and (max-width:1150px){
+    .nav__menu{
+      position: fixed;
+      top:0;
+      right:-100%;
+      background-color: hsla(0,0%,100%,.1);
+        backdrop-filter:blur(16px);
+        -webkit-backdrop-filter: blur(16px);
+      width:80%;
+      height:100%;
+      padding:6rem 3rem 0;
+      transition:right .4s
+    }
+  }
+  .nav__list{
+    display:flex;
+    flex-direction:column;
+    row-gap:3rem;
+  }
+  .nav__link{
+    color:var(--white-color);
+    font-weight:var(--font-semi-bold);
+  }
+  
+  .nav__link:hover{
+    text-decoration:underline;
+  }
+  .nav__close{
+    position:absolute;
+    top:1rem;
+    right:1.5rem;
+  
+  }
+  @media screen and (min-width:768px){
+    .nav__menu{
+      width:50%;
+    }
+  }
+  /* For smaller devices */
+  @media screen and (max-width: 1150px) {
+    .nav__toggle {
+      display: block; /* Ensure the toggle button is displayed */
+      color: var(--white-color);
+      font-size: 1.5rem;
+      cursor: pointer;
+      z-index: var(--z-fixed);
+    }
+  
+    .nav__menu {
+      position: fixed;
+      top: 0;
+      right: -100%;
+      background-color: hsla(0, 0%, 0%, 0.8); /* Slightly darker background for visibility */
+      backdrop-filter: blur(16px);
+      width: 80%;
+      height: 100%;
+      padding: 6rem 3rem 0;
+      transition: right 0.4s;
+    }
+  
+    .show-menu {
+      right: 0; /* Move the menu into view when the class is added */
+    }
+  }
+  
+  @media screen and (min-width:1150px){
+    .container1{
+      margin-inline:auto;
+    }
+    .nav{
+      height:calc(var(--header-height)+2rem);
+    }
+    .nav__toggle,
+    .nav__close{
+      display:none;
+    }
+    .nav__menu{
+      width:initial;
+    }
+    .nav__list{
+      flex-direction: row;
+      column-gap:4rem;
+    }}
+
+    ul {
+        list-style: none;
+      }
+      
+      a {
+        text-decoration: none;
+      }
+      
+      .main{
+        overflow:hidden;
+      }
+
+
+
+      :root {
+        --header-height: 3.5rem;
+      
+        /*========== Colors ==========*/
+        --white-color: hsl(0,0%,100%);
+        --black-color:hsla(0,0%,0%);
+      
+        /*========== Font and typography ==========*/
+        --body-font: "Montserrat Alternates", sans-serif;
+        --biggest-font-size: 2rem;
+        --big-font-size: 1.5rem;
+        --h3-font-size:1rem;
+        --normal-font-size: .938rem;
+      
+        /*========== Font weight ==========*/
+        --font-regular: 400;
+        --font-semi-bold: 600;
+        --font-bold: 700;
+      
+        /*========== z index ==========*/
+        --z-tooltip: 10;
+        --z-fixed: 100;
+      }
+      
+      /*========== Responsive typography ==========*/
+      @media screen and (min-width: 1150px) {
+        :root {
+          --biggest-font-size: 4rem;
+          --big-font-size: 3rem;
+          --h3-font-size: 1.25rem;
+          --normal-font-size: 1rem;
+        }
+      }
+      /*=============== BASE ===============*/
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
