@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RFID ID Management</title>
+    <link rel="stylesheet" href="IdManage.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css">
+</head>
+<body>
+    <header class="header" id="header">
+        <nav class="nav container1">
+            <a href="#" class="nav__logo">MatrixAccess</a>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li>
+                        <a href="file:///C:/FeeProjectRfidPortal/FirstPage/FirstPageArch.html#" class="nav__link">Home</a>
+                    </li>
+                    <li>
+                        <a href="file:///C:/FeeProjectRfidPortal/LoginPage/LoginPage.html" class="nav__link">SignIn</a>
+                    </li>
+                    <li>
+                        <a href="file:///C:/FeeProjectRfidPortal/T&Cs/Terms.html" class="nav__link">T&Cs</a>
+                    </li>
+                    <li>
+                        <a href="file:///C:/FeeProjectRfidPortal/Industries/Industries.html" class="nav__link">Industries</a>
+                    </li>
+                    <li>
+                        <a href="file:///C:/FeeProjectRfidPortal/FirstPage/AboutUs.html" class="nav__link">Contact</a>
+                    </li>
+                </ul>
+                <!-- <close button> -->
+                <div class="nav__close" id="nav-close">
+                    <i class="ri-close-line"></i>
+                </div>
+            </div>
+
+            <!-- <toogle buttone> -->
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="ri-menu-4-line"></i>
+                </div>
+        </nav>
+      </header>
+    <div id="container">
+        <h1>RFID ID Management System</h1>
+        <form id="myForm">
+            <label for="activation">Enter Activation ID:</label><br><br>
+                <input type="number" id="activation" name="activation" placeholder="Enter your ID"><br><br><br>
+            <label for="deactivation">Enter Deactivation ID:</label><br><br>
+                <input type="number" id="activation" name="deactivation" placeholder="Enter your ID"><br><br>
+
+                <button type="button" id="submit-btn" onclick="handleFormSubmit()">SUBMIT</button><br><br>
+                <button type="button" id="showListButton" onclick="showCardHolderList()">Show Card Holders</button>
+            
+        </form>
+        <div id="loading" class="loading">
+            <iframe src="https://giphy.com/embed/XunOdEWPoTCxraOxzN" width="480" height="398" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p>><h1>Loading..</h1></a></p>
+        </div>
+    </div>
+
+    <!-- Floating F and Q Buttons -->
+    <button id="fButton" onclick="toggleFAQWindow()">?</button>
+    <button id="qButton" onclick="toggleFAQWindow()">?</button>
+
+    <!-- FAQ Window -->
+    <div id="faqWindow">
+        <button id="closeFAQ" onclick="toggleFAQWindow()">&times;</button>
+        <h2>FAQ</h2>
+        <div id="faqContent">
+            <div class="faq-item">
+                <p class="faq-question" onclick="toggleAnswer(this)">
+                    <i class="ri-question-line"></i> Q: What is an RFID tag?
+                </p>
+                <p class="faq-answer">A: An RFID tag is a small device used to store information that can be read by an RFID reader using radio waves.</p>
+            </div>
+            <div class="faq-item">
+                <p class="faq-question" onclick="toggleAnswer(this)">
+                    <i class="ri-question-line"></i> Q: How does RFID work?
+                </p>
+                <p class="faq-answer">A: RFID works by using radio waves to communicate between a tag and a reader. The tag sends information to the reader when it is within range.</p>
+            </div>
+            <div class="faq-item">
+                <p class="faq-question" onclick="toggleAnswer(this)">
+                    <i class="ri-question-line"></i> Q: What types of RFID tags are there?
+                </p>
+                <p class="faq-answer">A: There are passive, active, and semi-active RFID tags. Passive tags do not have a battery, active tags have a battery, and semi-active tags have a battery that powers the tag but does not broadcast.</p>
+            </div>
+            <div class="faq-item">
+                <p class="faq-question" onclick="toggleAnswer(this)">
+                    <i class="ri-question-line"></i> Q: What is the range of RFID tags?
+                </p>
+                <p class="faq-answer">A: The range varies by type. Passive tags typically have a range of a few centimeters to a few meters, while active and semi-active tags can have a range of several meters to over 100 meters.</p>
+            </div>
+            <div class="faq-item">
+                <p class="faq-question" onclick="toggleAnswer(this)">
+                    <i class="ri-question-line"></i> Q: What is the difference between RFID and barcode?
+                </p>
+                <p class="faq-answer">A: RFID uses radio waves for communication and does not require line-of-sight, whereas barcodes require direct line-of-sight and can only be read by optical scanners.</p>
+            </div>
+            <div class="faq-item">
+                <p class="faq-question" onclick="toggleAnswer(this)">
+                    <i class="ri-question-line"></i> Q: Are RFID tags secure?
+                </p>
+                <p class="faq-answer">A: RFID tags have various levels of security. Basic tags have minimal security, while more advanced tags use encryption and other methods to enhance security.</p>
+            </div>
+            <div class="faq-item">
+                <p class="faq-question" onclick="toggleAnswer(this)">
+                    <i class="ri-question-line"></i> Q: Can RFID tags be read from a distance?
+                </p>
+                <p class="faq-answer">A: Yes, RFID tags can be read from varying distances depending on their type and the power of the RFID reader. Passive tags are typically read from short distances, while active tags can be read from much longer distances.</p>
+            </div>
+            <div class="faq-item">
+                <p class="faq-question" onclick="toggleAnswer(this)">
+                    <i class="ri-question-line"></i> Q: What industries use RFID technology?
+                </p>
+                <p class="faq-answer">A: RFID is used in many industries including retail, logistics, healthcare, and manufacturing for inventory management, tracking, and identification purposes.</p>
+            </div>
+            <div class="faq-item">
+                <p class="faq-question" onclick="toggleAnswer(this)">
+                    <i class="ri-question-line"></i> Q: How can I use RFID technology?
+                </p>
+                <p class="faq-answer">A: RFID technology can be used for various applications such as inventory tracking, access control, asset management, and contactless payments. It involves integrating RFID tags and readers into your systems.</p>
+            </div>
+        </div>
+
+        <!-- Go Up button -->
+        <i class="ri-arrow-up-line goUpButton" onclick="scrollToFAQTop()"></i>
+        </div>
+    </div>
+    <a href="file:///C:/FeeProjectRfidPortal/LogsAndProduct/logs.html" target="_blank" id="floatingLog">
+        <i class="ri-database-fill"></i>
+    </a>
+
+
+    <a href="file:///C:/FeeProjectRfidPortal/IdManagementAndFeedbackPage/ChatBot.html" target="_blank" id="floatingIcon">
+        <i class="ri-chat-smile-3-fill"></i>
+    </a>
+    <script>
+        function displayUserData() {
+            const rfidTagId = document.getElementById('rfidInput').value;
+            const userData = {
+                '0001': { name: 'Aaron ', role: 'Administrator', email: 'aaronvijaysing23@gmail.com' },
+                '0002': { name: 'Anuj', role: 'User', email: 'anujyadav@gamil.com' },
+                '0003': { name: 'Aryan', role: 'Manager', email: 'aryansemwal@gmail.com' },
+                '0004': { name: 'Akshit', role: 'User', email: 'akshit@gmail.com' },
+                '0005': { name: 'Anshul', role: 'User', email: 'anshulphondni@gmail.com' }
+            };
+            const user = userData[rfidTagId] || { name: 'Unknown', role: 'Unknown', email: 'N/A' };
+            document.getElementById('userName').innerText = `Name: ${user.name}`;
+            document.getElementById('userRole').innerText = `Role: ${user.role}`;
+            document.getElementById('userEmail').innerText = `Email: ${user.email}`;
+        }
+
+        function showCardHolderList() {
+            const userData = {
+                '0001': 'Aaron',
+                '0002': 'Anuj',
+                '0003': 'Aryan',
+                '0004': 'Akshit',
+                '0005': 'Anshul'
+            };
+            let list = 'List of Card Holders:\n';
+            for (const id in userData) {
+                list += `ID: ${id}, Name: ${userData[id]}\n`;
+            }
+            alert(list); // Display the list in an alert box or modify as needed
+        }
+
+        function toggleFAQWindow() {
+            const faqWindow = document.getElementById('faqWindow');
+            faqWindow.style.display = faqWindow.style.display === 'block' ? 'none' : 'block';
+        }
+
+        function toggleAnswer(questionElement) {
+            const answerElement = questionElement.nextElementSibling;
+            answerElement.classList.toggle('show');
+        }
+
+
+        function handleFormSubmit() {
+            // Show the loading animation
+            document.getElementById('loading').style.display = 'block';
+
+            // Simulate a delay (e.g., form submission process)
+            setTimeout(function() {
+                document.getElementById('loading').style.display = 'none';
+                alert('Form submitted successfully!');
+                window.location.href = 'file:///C:/FeeProjectRfidPortal/IdManagementAndFeedbackPage/feedback.html';
+            }, 3000); // 3 seconds delay
+        }
+        /*=============== SHOW MENU ===============*/
+const navMenu=document.getElementById('nav-menu'),
+navToggle=document.getElementById('nav-toggle'),
+navClose=document.getElementById('nav-close');
+
+/*menu show*/
+if(navToggle){
+    navToggle.addEventListener('click',()=>{
+        navMenu.classList.add('show-menu')
+    })
+}
+
+/*menu hidden*/
+if(navClose){
+    navClose.addEventListener('click',()=>{
+        navMenu.classList.remove('show-menu')
+    })
+}
+
+/*=============== REMOVE MENU MOBILE ===============*/
+const navLink=document.querySelectorAll('.nav__link')
+
+const linkAction=()=>{
+    const navMenu=document.getElementById('nav-menu')
+    navMenu.classList.remove('show-menu')
+}
+navLink.forEach(n=>n.addEventListener('click',()=>{
+    navMenu.classList.remove('show-menu');
+
+}))
+
+//bottom to top button
+navLink.forEach(n => n.addEventListener('click', linkAction));
+
+        window.onscroll = function() {
+            const button = document.getElementById('goTopButton');
+            if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+                button.style.display = "block"; // Show button
+            } else {
+                button.style.display = "none"; // Hide button
+            }
+        };
+
+        function goToTop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' }); // Smooth scroll to top
+        }
+
+        function scrollToFAQTop() {
+            const faqWindow = document.getElementById('faqWindow');
+            faqWindow.scrollTo({ top: 0, behavior: 'smooth' }); // Smooth scroll to the top of the FAQ window
+        }
+    </script>
+</body>
+</html>
