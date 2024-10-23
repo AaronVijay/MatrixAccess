@@ -92,7 +92,7 @@ Version 2:<br>
 We added the naviagtion bar.<br><br>
 11)Records Page:<br>
 ->This page displays and takes records for the alterations done in UIDs the user can come to this page to enter their modifications.<br><br>
-We added a navigation bar.<br><br>
+->We added a navigation bar.<br><br>
 12)Industries Page:<br>
 ->This page displays all the industries we work in and support with our products in the world.
 
