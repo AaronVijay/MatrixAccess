@@ -1,4 +1,4 @@
-Matrix Access: Prtal For RFID Tag Management System <br>
+Matrix Access: Portal For RFID Tag Management System <br>
 Matrix Access is an innovative RFID-based project designed to provide a seamless and secure web portal for managing RFID tags and their corresponding unique identifiers (UIDs). The system is equipped with a user-friendly interface to enhance the overall user experience by incorporating multiple web pages and functional elements. <br>
 
 Features <br>
