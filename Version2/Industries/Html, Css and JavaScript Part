@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Industries - Your Company</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f5f5f5;
+      color: #333;
+    }
+    
+    header {
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      padding: 60px 20px;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 40px;
+    }
+
+    header p {
+      margin-top: 10px;
+      font-size: 18px;
+    }
+
+    .industries-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      padding: 20px;
+    }
+
+    .industry-box {
+      width: 300px;
+      margin: 15px;
+      background-color: #fff;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.2s ease-in-out;
+      border-radius: 10px;
+      overflow: hidden;
+    }
+
+    .industry-box:hover {
+      transform: translateY(-5px);
+    }
+
+    .industry-image img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-bottom: 1px solid #ddd;
+    }
+
+    .industry-content {
+      padding: 15px;
+      text-align: center;
+    }
+
+    .industry-content h3 {
+      font-size: 20px;
+      margin: 0 0 10px;
+    }
+
+    .industry-content a {
+      text-decoration: none;
+      color: #008CBA;
+      font-weight: bold;
+    }
+
+    .industry-content a:hover {
+      text-decoration: underline;
+    }
+
+    /* Responsive design */
+    @media only screen and (max-width: 768px) {
+      .industries-container {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .industry-box {
+        width: 90%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Industry Partners</h1>
+  <p>Matrix Access sets new standards in security, design, flexibility, and manageability. Read Salto customer case studies to discover real-world benefits for any door or building.</p>
+</header>
+
+<div class="industries-container">
+  <!-- Commercial -->
+  <div class="industry-box">
+    <div class="industry-image">
+      <img src="Airports.jpeg" alt="Commercial Industry">
+    </div>
+    <div class="industry-content">
+      <h3>Airports</h3>
+      <a href="https://bangaloremirror.indiatimes.com/bangalore/others/cargo-at-kempegowda-international-airport-to-get-rfid-tech-boost/articleshow/65676924.cms">Read More</a>
+    </div>
+  </div>
+
+  <!-- Healthcare -->
+  <div class="industry-box">
+    <div class="industry-image">
+      <img src="Healthcare.jpeg" alt="Healthcare Industry">
+    </div>
+    <div class="industry-content">
+      <h3>Healthcare</h3>
+      <a href="https://www.scribd.com/document/48885988/Apollo-Hospital-Chennai-Uses-RFID-to-Speed-Up-Check">Read More</a>
+    </div>
+  </div>
+
+  <!-- Hospitality -->
+  <div class="industry-box">
+    <div class="industry-image">
+      <img src="Hospitality.jpeg" alt="Hospitality Industry">
+    </div>
+    <div class="industry-content">
+      <h3>Hospitality</h3>
+      <a href="https://tjnfctag.com/product/jw-marriott-by-marriott-hotel-key-card/#:~:text=Make%20room%20access%20simple%20with,room%20security%20and%20guest%20safety.">Read More</a>
+    </div>
+  </div>
+
+  <!-- Education -->
+  <div class="industry-box">
+    <div class="industry-image">
+      <img src="education.jpeg" alt="Education Industry">
+    </div>
+    <div class="industry-content">
+      <h3>Education</h3>
+      <a href="https://mountcarmelcollege.ac.in/library/rfid/">Read More</a>
+    </div>
+  </div>
+
+  <!-- Residential -->
+  <div class="industry-box">
+    <div class="industry-image">
+      <img src="residential.jpeg" alt="Residential Industry">
+    </div>
+    <div class="industry-content">
+      <h3>Residential</h3>
+      <a href="https://rshris.com/rfid-based-vehicle-entry-system-for-a-residential-society/">Read More</a>
+    </div>
+  </div>
+
+  <!-- Shared Living Spaces -->
+  <div class="industry-box">
+    <div class="industry-image">
+      <img src="sharedLiving.jpeg" alt="Shared Living Spaces">
+    </div>
+    <div class="industry-content">
+      <h3>Shared Living Spaces</h3>
+      <a href="https://blog.simons-voss.com/en/industries/different-types-of-door-locks-for-your-co-living-spaces/">Read More</a>
+    </div>
+  </div>
+
+  <!-- Retail -->
+  <div class="industry-box">
+    <div class="industry-image">
+      <img src="retail.jpeg" alt="Retail Industry">
+    </div>
+    <div class="industry-content">
+      <h3>Retail</h3>
+      <a href="https://economictimes.indiatimes.com/industry/services/retail/future-group-cisco-in-tie-up-talks-for-retail-rfid-project/articleshow/2896457.cms?from=mdr">Read More</a>
+    </div>
+  </div>
+
+  <!-- Coworking -->
+  <div class="industry-box">
+    <div class="industry-image">
+      <img src="coworking.jpeg" alt="Coworking Industry">
+    </div>
+    <div class="industry-content">
+      <h3>Coworking</h3>
+      <a href="https://www.spacebring.com/blog/productivity/automate-coworking-space-access">Read More</a>
+    </div>
+  </div>
+
+  <!-- Marine -->
+  <div class="industry-box">
+    <div class="industry-image">
+      <img src="marine.jpeg" alt="Marine Industry">
+    </div>
+    <div class="industry-content">
+      <h3>Marine</h3>
+      <a href="https://www.valleybox.com/blog/rfid-in-the-packaging-and-shipping-industry">Read More</a>
+    </div>
+  </div>
+
+  <!-- Attractions, Leisure and Sports -->
+  <div class="industry-box">
+    <div class="industry-image">
+      <img src="attractions.jpeg" alt="Attractions and Sports Industry">
+    </div>
+    <div class="industry-content">
+      <h3>Attractions, Leisure and Sports</h3>
+      <a href="https://www.rfidcard.com/rfid-tags-the-secret-weapon-revolutionizing-amusement-park-management/?srsltid=AfmBOoqJWk83G5DQAo6N871NFXUhbeJ0GJbxbIC5hYh8b9Eo4x-WV0jm">Read More</a>
+    </div>
+  </div>
+
+  <!-- Fitness Centers & Gyms -->
+  <div class="industry-box">
+    <div class="industry-image">
+      <img src="fitness.jpeg" alt="Fitness Centers & Gyms">
+    </div>
+    <div class="industry-content">
+      <h3>Fitness Centers & Gyms</h3>
+      <a href="https://syrmasgs.com/tag/gym-rfid-tags/">Read More</a>
+    </div>
+  </div>
+
+  <!-- Corporate Smart Offices -->
+  <div class="industry-box">
+    <div class="industry-image">
+      <img src="Cooperate.jpeg" alt="Corporate Smart Offices">
+    </div>
+    <div class="industry-content">
+      <h3>Corporate Smart Offices</h3>
+      <a href="https://docs.citrix.com/en-us/citrix-virtual-apps-desktops/secure/smart-cards.html">Read More</a>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
