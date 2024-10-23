@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rate This Review</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+            background:linear-gradient(120deg, #0c0f12, #0f1c29 50%, #101721 80%, #1d3b45);
+        }
+        .container {
+            background-color: #fff;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            display: inline-block;
+            max-width: 500px;
+            width: 100%;
+        }
+        h1 {
+            margin-bottom: 20px;
+            color: #333;
+        }
+        .emoji-container {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+        .emoji {
+            font-size: 2.5rem;
+            cursor: pointer;
+            margin: 0 15px;
+            transition: transform 0.2s, color 0.2s;
+        }
+        .emoji:hover {
+            transform: scale(1.3);
+            color: #ffcc00;
+        }
+        #selected-rating {
+            font-size: 1.2rem;
+            color: #555;
+            margin-top: 10px;
+        }
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 15px;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+            resize: none;
+        }
+        button {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            margin-top: 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1rem;
+            transition: background-color 0.2s;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        #gif-container {
+            display: none;
+            margin-top: 20px;
+        }
+        #submission-message {
+            display: none;
+            margin-top: 20px;
+            font-size: 1.2rem;
+            color: #28a745;
+        }
+
+        .header{
+    position:fixed;
+    width:100%;
+    top:0;
+    left:0;
+    background-color: transparent;
+    z-index:var(--z-fixed);
+  }
+  .container1 {
+    max-width: 1120px;
+    margin-inline: 1.5rem;
+  }
+  .nav{
+    position:relative;
+    height:var(--header-height);
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+  }
+  .nav__logo{
+    color:var(--white-color);
+    font-weight:var(--font-semi-bold);
+  }
+  @media screen and (max-width:1150px){
+    .nav__menu{
+      position: fixed;
+      top:0;
+      right:-100%;
+      background-color: hsla(0,0%,100%,.1);
+        backdrop-filter:blur(16px);
+        -webkit-backdrop-filter: blur(16px);
+      width:80%;
+      height:100%;
+      padding:6rem 3rem 0;
+      transition:right .4s
+    }
+  }
+  .nav__list{
+    display:flex;
+    flex-direction:column;
+    row-gap:3rem;
+  }
+  .nav__link{
+    color:var(--white-color);
+    font-weight:var(--font-semi-bold);
+  }
+  
+  .nav__link:hover{
+    text-decoration:underline;
+  }
+  .nav__close{
+    position:absolute;
+    top:1rem;
+    right:1.5rem;
+  
+  }
+  @media screen and (min-width:768px){
+    .nav__menu{
+      width:50%;
+    }
+  }
+  /* For smaller devices */
+  @media screen and (max-width: 1150px) {
+    .nav__toggle {
+      display: block; /* Ensure the toggle button is displayed */
+      color: var(--white-color);
+      font-size: 1.5rem;
+      cursor: pointer;
+      z-index: var(--z-fixed);
+    }
+  
+    .nav__menu {
+      position: fixed;
+      top: 0;
+      right: -100%;
+      background-color: hsla(0, 0%, 0%, 0.8); /* Slightly darker background for visibility */
+      backdrop-filter: blur(16px);
+      width: 80%;
+      height: 100%;
+      padding: 6rem 3rem 0;
+      transition: right 0.4s;
+    }
+  
+    .show-menu {
+      right: 0; /* Move the menu into view when the class is added */
+    }
+  }
+  
+  @media screen and (min-width:1150px){
+    .container1{
+      margin-inline:auto;
+    }
+    .nav{
+      height:calc(var(--header-height)+2rem);
+    }
+    .nav__toggle,
+    .nav__close{
+      display:none;
+    }
+    .nav__menu{
+      width:initial;
+    }
+    .nav__list{
+      flex-direction: row;
+      column-gap:4rem;
+    }}
+
+    ul {
+        list-style: none;
+      }
+      
+      a {
+        text-decoration: none;
+      }
+      
+      .main{
+        overflow:hidden;
+      }
+
+
+
+      :root {
+        --header-height: 3.5rem;
+      
+        /*========== Colors ==========*/
+        --white-color: hsl(0,0%,100%);
+        --black-color:hsla(0,0%,0%);
+      
+        /*========== Font and typography ==========*/
+        --body-font: "Montserrat Alternates", sans-serif;
+        --biggest-font-size: 2rem;
+        --big-font-size: 1.5rem;
+        --h3-font-size:1rem;
+        --normal-font-size: .938rem;
+      
+        /*========== Font weight ==========*/
+        --font-regular: 400;
+        --font-semi-bold: 600;
+        --font-bold: 700;
+      
+        /*========== z index ==========*/
+        --z-tooltip: 10;
+        --z-fixed: 100;
+      }
+      
+      /*========== Responsive typography ==========*/
+      @media screen and (min-width: 1150px) {
+        :root {
+          --biggest-font-size: 4rem;
+          --big-font-size: 3rem;
+          --h3-font-size: 1.25rem;
+          --normal-font-size: 1rem;
+        }
+      }
+      /*=============== BASE ===============*/
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+    </style>
+</head>
+<body>
+    <header class="header" id="header">
+        <nav class="nav container1">
+            <a href="#" class="nav__logo">MatrixAccess</a>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li>
+                        <a href="file:///C:/FeeProjectRfidPortal/FirstPage/FirstPageArch.html#" class="nav__link">Home</a>
+                    </li>
+                    <li>
+                        <a href="file:///C:/FeeProjectRfidPortal/LoginPage/LoginPage.html" class="nav__link">SignIn</a>
+                    </li>
+                    <li>
+                        <a href="file:///C:/FeeProjectRfidPortal/T&Cs/Terms.html" class="nav__link">T&Cs</a>
+                    </li>
+                    <li>
+                        <a href="file:///C:/FeeProjectRfidPortal/Industries/Industries.html" class="nav__link">Industries</a>
+                    </li>
+                    <li>
+                        <a href="file:///C:/FeeProjectRfidPortal/FirstPage/AboutUs.html" class="nav__link">Contact</a>
+                    </li>
+                </ul>
+                <!-- <close button> -->
+                <div class="nav__close" id="nav-close">
+                    <i class="ri-close-line"></i>
+                </div>
+            </div>
+
+            <!-- <toogle buttone> -->
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="ri-menu-4-line"></i>
+                </div>
+        </nav>
+      </header>
+    <div class="container">
+        <h1>Rate This Review</h1>
+        <div class="emoji-container">
+            <span class="emoji" onclick="rateReview(1, '😡')">😡</span>
+            <span class="emoji" onclick="rateReview(2, '😞')">😞</span>
+            <span class="emoji" onclick="rateReview(3, '😐')">😐</span>
+            <span class="emoji" onclick="rateReview(4, '😊')">😊</span>
+            <span class="emoji" onclick="rateReview(5, '😍')">😍</span>
+        </div>
+        <p id="selected-rating">Select an emoji to rate this review.</p>
+
+        <textarea id="review-text" rows="4" placeholder="Write your review here..."></textarea>
+
+        <button onclick="submitReview()">Submit Review</button>
+
+        <p id="submission-message">Your response has been submitted!</p>
+
+        <div id="gif-container">
+            <iframe src="https://giphy.com/embed/5fBH6zodw7VMuR8uUnu" width="471" height="480" style="border:none;" allowFullScreen></iframe>
+        </div>
+    </div>
+
+    <script>
+        let rating = 0;
+
+        function rateReview(stars, emoji) {
+            rating = stars;
+            document.getElementById('selected-rating').textContent = 'You rated this review: ' + emoji + ' (' + rating + ' out of 5)';
+        }
+
+        function submitReview() {
+            const reviewText = document.getElementById('review-text').value;
+
+            if (rating === 0) {
+                alert('Please select an emoji rating.');
+                return;
+            }
+
+            if (reviewText.trim() === '') {
+                alert('Please write a review before submitting.');
+                return;
+            }
+
+            // Show the GIF and submission message
+            document.getElementById('gif-container').style.display = 'block';
+            document.getElementById('submission-message').style.display = 'block';
+        }
+        /*=============== SHOW MENU ===============*/
+const navMenu=document.getElementById('nav-menu'),
+navToggle=document.getElementById('nav-toggle'),
+navClose=document.getElementById('nav-close');
+
+/*menu show*/
+if(navToggle){
+    navToggle.addEventListener('click',()=>{
+        navMenu.classList.add('show-menu')
+    })
+}
+
+/*menu hidden*/
+if(navClose){
+    navClose.addEventListener('click',()=>{
+        navMenu.classList.remove('show-menu')
+    })
+}
+
+/*=============== REMOVE MENU MOBILE ===============*/
+const navLink=document.querySelectorAll('.nav__link')
+
+const linkAction=()=>{
+    const navMenu=document.getElementById('nav-menu')
+    navMenu.classList.remove('show-menu')
+}
+navLink.forEach(n=>n.addEventListener('click',()=>{
+    navMenu.classList.remove('show-menu');
+
+}))
+    </script>
+</body>
+</html>
